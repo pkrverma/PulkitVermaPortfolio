@@ -77,7 +77,7 @@ nav div.nav-tab ul {
 Banner section
 ====================== */
 .banner {
-    background: url(/Portfolio/banner.jpeg)no-repeat;
+    background: url(/banner.jpeg)no-repeat;
     height: 100vh;
     background-position: cover;
     background-size: cover;
