@@ -105,7 +105,7 @@ nav div.nav-tab ul {
 Banner section
 ====================== */
 .banner {
-    background: url(/banner.jpeg)no-repeat;
+    background: url(img/banner.jpeg)no-repeat;
     height: 100vh;
     background-position: cover;
     background-size: cover;
@@ -246,11 +246,11 @@ section {
     }
 
     .sub-head-2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .icon {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .desc {
@@ -336,7 +336,7 @@ Project section
     margin: 1rem 1rem 0.5rem 1rem;
     border-radius: 10px;
     background-color: #365486;
-    color: #DCF2F1;
+    color: #ffffff;
     border: 2px solid #2c497a;
 }
 
