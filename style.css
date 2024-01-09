@@ -50,12 +50,6 @@ nav .title a {
     cursor: pointer;
 }
 
-@media (max-width:690px) {
-    nav .title {
-        font-size: 1rem;
-    }
-}
-
 nav div.nav-tab ul {
     display: flex;
     flex-direction: row;
@@ -64,6 +58,22 @@ nav div.nav-tab ul {
 .nav-tab li {
     list-style: none;
     padding: 0rem 1.1rem;
+}
+
+.nav-tab li a{
+    font-size: 1rem;
+}
+
+@media (max-width:720px) {
+    nav .title {
+        font-size: 1rem;
+    }
+    .nav-tab li {
+        padding: 0rem 0.5rem;
+    }
+    .nav-tab li a{
+        font-size: 0.75rem;
+    }
 }
 
 .nav-tab li a {
@@ -101,6 +111,27 @@ Banner section
     font-size: 1.5rem;
 }
 
+@media (max-width:720px) {
+    .banner{
+        background-position:right;
+    }
+    .banner-text{
+        font-size: 2.3rem;
+    }
+    .tagline{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:540px) {
+    .banner-text {
+        font-size: 2rem;
+    }
+    .tagline{
+        font-size: 1rem;
+    }
+}
+
 
 /* ======================
 Common style tags
@@ -128,6 +159,11 @@ section {
     color: #274a87;
     font-size: 2rem;
     padding-bottom: 1rem;
+}
+
+.sub-head-2 {
+    font-size: 1.4rem;
+    color: #0088ab;
 }
 
 .content {
@@ -167,15 +203,27 @@ section {
     align-items: center;
 }
 
-.sub-head-2 {
-    font-size: 1.4rem;
-    color: #0088ab;
-
-}
-
 .flex-cont {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width:720px){
+    .sub-head{
+        font-size: 1.75rem;
+    }
+
+    .sub-head-2{
+        font-size: 1.25rem;
+    }
+
+    .icon{
+        font-size: 1rem;
+    }
+
+    .desc{
+        font-size: 1rem;
+    }
 }
 
 /* ======================
@@ -246,6 +294,7 @@ Project section
 
 .project-desc {
     padding-left: 1rem;
+    text-align: justify;
 }
 
 .div-box button {
@@ -264,6 +313,9 @@ Project section
     color: #365486;
 }
 
+@media (max-width:720px){
+
+}
 /* ======================
 Contact section
 ====================== */
@@ -273,6 +325,8 @@ Contact section
     background-color: #ededed76;
     padding: 1rem;
     font-size: 1.1rem;
+    border-bottom-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
 }
 
 .contact-div-box {
@@ -299,34 +353,43 @@ Contact section
     color: #365486;
 }
 
-.mobile{
+.first{
+    border-top-right-radius: 1.25rem;
+}
+
+.last{
+    border-bottom-left-radius: 1.25rem;
+}
+
+.mobile {
     color: #343434;
 }
 
-.gmail{
+.gmail {
     color: #fe5900;
 }
 
-.linkedin{
+.linkedin {
     color: #196eff;
 }
 
-.github{
+.github {
     color: #000000;
 }
 
-.instagram{
+.instagram {
     color: #f900bb;
 }
 
-.telegram{
+.telegram {
     color: #0246bc;
 }
+
 /* ======================
 Footer section
 ====================== */
 
-.footer{
+.footer {
     /* padding: 1rem; */
     background-color: #343434;
     height: 4rem;
@@ -334,11 +397,11 @@ Footer section
     font-family: 'Taviraj', serif;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.footer p{
+.footer p {
     font-size: 1.2rem;
-    
+
 }
