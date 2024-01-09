@@ -131,7 +131,7 @@ section {
 }
 
 .content {
-    background-color: #eeeeee76;
+    background-color: rgba(237, 237, 237, 0.463);
     padding: 1rem;
     margin-top: 2rem;
     border-bottom-left-radius: 1.25rem;
@@ -146,7 +146,7 @@ section {
 .icon {
     font-size: 1.2rem;
     padding-right: 1rem;
-    color: #4a4a4a;
+    color: #365486;
 }
 
 .div-box {
@@ -190,7 +190,7 @@ About section
 }
 
 #edu-desc {
-    background-color: #eeeeee76;
+    background-color: rgba(237, 237, 237, 0.463);
 }
 
 .inst,
@@ -208,31 +208,31 @@ Skill section
     font-size: 1rem;
 }
 
-.intermediate{
-    color: rgb(255, 145, 0);
+.intermediate {
+    color: rgb(255, 196, 0);
 }
 
-.beginner{
+.beginner {
     color: red;
 }
 
-.html{
+.html {
     color: #F06427;
 }
 
-.css{
+.css {
     color: #1471B6;
 }
 
-.js{
+.js {
     color: #ECD52D;
 }
 
-.bs{
+.bs {
     color: #7431FA;
 }
 
-.db{
+.db {
     color: #117200;
 }
 
@@ -240,14 +240,105 @@ Skill section
 Project section
 ====================== */
 
+.project-head {
+    padding-bottom: 1rem;
+}
 
+.project-desc {
+    padding-left: 1rem;
+}
+
+.div-box button {
+    font-family: 'Krona One', sans-serif;
+    padding: 0.5rem;
+    margin: 1rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #365486;
+    color: #DCF2F1;
+    border: 2px solid #2c497a;
+}
+
+.div-box button:hover {
+    cursor: pointer;
+    background-color: #DCF2F1;
+    color: #365486;
+}
 
 /* ======================
 Contact section
 ====================== */
 
+.conact-box {
+    margin: 2rem 0;
+    background-color: #ededed76;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
 
+.contact-div-box {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: #ffffff;
+}
 
+.contact-div-box span {
+    color: black;
+}
+
+.contact-div-box a {
+    cursor: pointer;
+    color: black;
+}
+
+.con-icon {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    color: #365486;
+}
+
+.mobile{
+    color: #343434;
+}
+
+.gmail{
+    color: #fe5900;
+}
+
+.linkedin{
+    color: #196eff;
+}
+
+.github{
+    color: #000000;
+}
+
+.instagram{
+    color: #f900bb;
+}
+
+.telegram{
+    color: #0246bc;
+}
 /* ======================
 Footer section
 ====================== */
+
+.footer{
+    /* padding: 1rem; */
+    background-color: #343434;
+    height: 4rem;
+    color: #dbeded;
+    font-family: 'Taviraj', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 1.2rem;
+    
+}
