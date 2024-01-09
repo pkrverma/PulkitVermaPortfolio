@@ -60,7 +60,7 @@ nav div.nav-tab ul {
     padding: 0rem 1.1rem;
 }
 
-.nav-tab li a{
+.nav-tab li a {
     font-size: 1rem;
 }
 
@@ -68,11 +68,29 @@ nav div.nav-tab ul {
     nav .title {
         font-size: 1rem;
     }
+
     .nav-tab li {
         padding: 0rem 0.5rem;
     }
-    .nav-tab li a{
+
+    .nav-tab li a {
         font-size: 0.75rem;
+    }
+}
+
+@media (max-width:480px) {
+    nav .title {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:390px) {
+    nav .title {
+        font-size: 0.5rem;
+    }
+
+    .nav-tab li a {
+        font-size: 0.65rem;
     }
 }
 
@@ -112,13 +130,15 @@ Banner section
 }
 
 @media (max-width:720px) {
-    .banner{
-        background-position:right;
+    .banner {
+        background-position: right;
     }
-    .banner-text{
+
+    .banner-text {
         font-size: 2.3rem;
     }
-    .tagline{
+
+    .tagline {
         font-size: 1.2rem;
     }
 }
@@ -127,7 +147,8 @@ Banner section
     .banner-text {
         font-size: 2rem;
     }
-    .tagline{
+
+    .tagline {
         font-size: 1rem;
     }
 }
@@ -194,7 +215,7 @@ section {
     border-top-right-radius: 1rem;
 }
 
-.flex-div{
+.flex-div {
     display: flex;
     flex-direction: row;
 }
@@ -209,7 +230,7 @@ section {
     align-items: center;
 }
 
-.flex-div-2{
+.flex-div-2 {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -219,20 +240,20 @@ section {
     font-size: 1rem;
 }
 
-@media (max-width:720px){
-    .sub-head{
+@media (max-width:720px) {
+    .sub-head {
         font-size: 1.75rem;
     }
 
-    .sub-head-2{
+    .sub-head-2 {
         font-size: 1.25rem;
     }
 
-    .icon{
+    .icon {
         font-size: 1rem;
     }
 
-    .desc{
+    .desc {
         font-size: 1rem;
     }
 }
@@ -303,6 +324,12 @@ Project section
     text-align: justify;
 }
 
+.project-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
 .div-box button {
     font-family: 'Krona One', sans-serif;
     padding: 0.5rem;
@@ -319,9 +346,37 @@ Project section
     color: #365486;
 }
 
-@media (max-width:720px){
+@media(max-width:540px) {
+    .project-link {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
+    .div-box button {
+        padding: 0.5rem 1rem;
+    }
 }
+
+@media (max-width:480px) {
+
+    .project-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-box button {
+        padding: 0.5rem 4rem;
+    }
+}
+
+@media (max-width:390px) {
+    .div-box button {
+        padding: 0.5rem 4rem;
+        font-size: 0.65rem;
+    }
+}
+
 /* ======================
 Contact section
 ====================== */
@@ -359,11 +414,11 @@ Contact section
     color: #365486;
 }
 
-.first{
+.first {
     border-top-right-radius: 1.25rem;
 }
 
-.last{
+.last {
     border-bottom-left-radius: 1.25rem;
 }
 
@@ -372,11 +427,11 @@ Contact section
 }
 
 .gmail {
-    color: #fe5900;
+    color: #fe5000;
 }
 
 .linkedin {
-    color: #196eff;
+    color: #1873B9;
 }
 
 .github {
@@ -388,7 +443,19 @@ Contact section
 }
 
 .telegram {
-    color: #0246bc;
+    color: #2DA3E0;
+}
+
+@media(max-width:540px) {
+    .conact-box {
+        font-size: 0.75rem;
+    }
+}
+
+@media(max-width:390px) {
+    .conact-box{
+        font-size: 0.5rem;
+    }
 }
 
 /* ======================
@@ -409,5 +476,16 @@ Footer section
 
 .footer p {
     font-size: 1.2rem;
+}
 
+@media(max-width:540px) {
+    .footer p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:390px) {
+    .footer p {
+        font-size: 0.75rem;
+    }
 }
