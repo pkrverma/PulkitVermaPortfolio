@@ -182,6 +182,7 @@ section {
 .icon {
     font-size: 1.2rem;
     padding-right: 1rem;
+    padding-top: 0.65rem;
     color: #365486;
 }
 
@@ -191,6 +192,11 @@ section {
     padding: 1rem;
     border-bottom-left-radius: 1rem;
     border-top-right-radius: 1rem;
+}
+
+.flex-div{
+    display: flex;
+    flex-direction: row;
 }
 
 .bot-border {
@@ -203,9 +209,14 @@ section {
     align-items: center;
 }
 
-.flex-cont {
+.flex-div-2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: start;
+}
+
+.level {
+    font-size: 1rem;
 }
 
 @media (max-width:720px){
@@ -250,11 +261,6 @@ About section
 /* ======================
 Skill section
 ====================== */
-
-.level {
-    padding-left: 2.1rem;
-    font-size: 1rem;
-}
 
 .intermediate {
     color: rgb(255, 196, 0);
