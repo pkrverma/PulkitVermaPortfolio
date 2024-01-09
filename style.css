@@ -76,11 +76,24 @@ nav div.nav-tab ul {
     .nav-tab li a {
         font-size: 0.75rem;
     }
+
+    nav .title {
+        padding-left: 1rem;
+    }
 }
 
 @media (max-width:480px) {
     nav .title {
         font-size: 0.75rem;
+    }
+}
+
+@media (max-width:430px) {
+    nav .title {
+        font-size: 0.65rem;
+    }
+    nav .title {
+        padding-left: 0.5rem;
     }
 }
 
@@ -107,7 +120,8 @@ Banner section
 .banner {
     background: url("img/banner.jpeg")no-repeat;
     height: 100vh;
-    background-position: cover;
+    /* background-position: cover; */
+    background-position: right;
     background-size: cover;
 }
 
@@ -130,10 +144,6 @@ Banner section
 }
 
 @media (max-width:720px) {
-    .banner {
-        background-position: right;
-    }
-
     .banner-text {
         font-size: 2.3rem;
     }
@@ -453,7 +463,7 @@ Contact section
 }
 
 @media(max-width:390px) {
-    .conact-box{
+    .conact-box {
         font-size: 0.5rem;
     }
 }
