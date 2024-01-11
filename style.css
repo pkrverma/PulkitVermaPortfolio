@@ -100,7 +100,7 @@ nav div.nav-tab ul {
 
 @media (max-width:400px) {
     nav .title {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
     }
 
     .nav-tab li a {
@@ -156,7 +156,7 @@ Banner section
 
 @media(max-width:540px) {
     .banner-text {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .tagline {
@@ -164,6 +164,14 @@ Banner section
     }
 }
 
+@media(max-width:400px) {
+    .banner-text{
+        font-size: 1.2rem;
+    }
+    .tagline {
+        font-size: 0.8rem;
+    }
+}
 
 /* ======================
 Common style tags
@@ -176,7 +184,7 @@ section {
     font-family: 'Krona One', sans-serif;
     border: 2px solid #fcb3b3;
     border-radius: 50rem;
-    width: 7rem;
+    width: 9rem;
     margin: 2rem auto 0;
     padding: 0.25rem;
     text-align: center;
@@ -284,6 +292,9 @@ section {
 
     .div-box {
         padding: 0.75rem;
+    }
+    .icon {
+        font-size: 1rem;
     }
 }
 
@@ -563,7 +574,7 @@ Contact section
     }
 
     .contact-div-box .sub-head-2 {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     .con-icon {
