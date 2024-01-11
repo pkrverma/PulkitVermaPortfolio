@@ -92,12 +92,13 @@ nav div.nav-tab ul {
     nav .title {
         font-size: 0.65rem;
     }
+
     nav .title {
         padding-left: 0.5rem;
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:400px) {
     nav .title {
         font-size: 0.5rem;
     }
@@ -256,7 +257,7 @@ section {
     }
 
     .sub-head-2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .icon {
@@ -265,6 +266,24 @@ section {
 
     .desc {
         font-size: 1rem;
+    }
+}
+
+@media (max-width:400px) {
+    .sub-head {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .sub-head-2 {
+        font-size: 1.1rem;
+    }
+
+    .div-box {
+        padding: 0.75rem;
     }
 }
 
@@ -287,6 +306,65 @@ About section
 .marks {
     padding-left: 2rem;
     font-size: 1rem;
+}
+
+.download {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.download i {
+    padding-left: 1rem;
+    font-size: larger;
+}
+
+.download button {
+    padding: 0.55rem;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1rem;
+    width: 25rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: #365486;
+    color: #ffffff;
+    border: 2px solid #2c497add;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.download button:hover {
+    border: #365486 2px solid;
+    background-color: #DCF2F1;
+    color: #365486;
+}
+
+@media(max-width:540px) {
+    .download button {
+        width: 20rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width:400px) {
+    #about-desc {
+        padding: 1rem;
+    }
+
+    .inst,
+    .marks {
+        font-size: 0.85rem;
+    }
+
+    .download button {
+        width: 15rem;
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width:350px){
+    .download button {
+        width: 10rem;
+        font-size: 0.5rem;
+    }
 }
 
 /* ======================
@@ -348,6 +426,8 @@ Project section
     background-color: #365486;
     color: #ffffff;
     border: 2px solid #2c497a;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
 }
 
 .div-box button:hover {
@@ -380,10 +460,14 @@ Project section
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:400px) {
     .div-box button {
         padding: 0.5rem 4rem;
         font-size: 0.65rem;
+    }
+
+    .project-desc {
+        font-size: 0.85rem;
     }
 }
 
@@ -395,7 +479,6 @@ Contact section
     margin: 2rem 0;
     background-color: #ededed76;
     padding: 1rem;
-    font-size: 1.1rem;
     border-bottom-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
 }
@@ -407,6 +490,10 @@ Contact section
     justify-content: start;
     align-items: center;
     background-color: #ffffff;
+}
+
+.contact-div-box .sub-head-2 {
+    font-size: 1.3rem;
 }
 
 .contact-div-box span {
@@ -460,11 +547,27 @@ Contact section
     .conact-box {
         font-size: 0.75rem;
     }
+
+    .contact-div-box .sub-head-2 {
+        font-size: 1rem;
+    }
+
+    .con-icon {
+        font-size: 1rem;
+    }
 }
 
-@media(max-width:390px) {
+@media(max-width:400px) {
     .conact-box {
         font-size: 0.5rem;
+    }
+
+    .contact-div-box .sub-head-2 {
+        font-size: 0.85rem;
+    }
+
+    .con-icon {
+        font-size: 0.85rem;
     }
 }
 
@@ -494,7 +597,7 @@ Footer section
     }
 }
 
-@media(max-width:390px) {
+@media(max-width:400px) {
     .footer p {
         font-size: 0.75rem;
     }
