@@ -165,9 +165,10 @@ Banner section
 }
 
 @media(max-width:400px) {
-    .banner-text{
+    .banner-text {
         font-size: 1.2rem;
     }
+
     .tagline {
         font-size: 0.8rem;
     }
@@ -220,10 +221,11 @@ section {
 }
 
 .icon {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-right: 1rem;
-    padding-top: 0.65rem;
+    margin: auto 0.1px;
     color: #365486;
+    text-align: center;
 }
 
 .div-box {
@@ -246,7 +248,9 @@ section {
 .flex-cont {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center;
+    text-align: center; */
+
 }
 
 .flex-div-2 {
@@ -293,6 +297,7 @@ section {
     .div-box {
         padding: 0.75rem;
     }
+
     .icon {
         font-size: 1rem;
     }
@@ -371,7 +376,7 @@ About section
     }
 }
 
-@media (max-width:350px){
+@media (max-width:350px) {
     .download button {
         width: 10rem;
         font-size: 0.5rem;
@@ -381,6 +386,14 @@ About section
 /* ======================
 Skill section
 ====================== */
+
+.skill-icon {
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.65rem;
+    color: #365486;
+    text-align: center;
+}
 
 .intermediate {
     color: rgb(255, 196, 0);
