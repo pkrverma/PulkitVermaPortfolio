@@ -235,9 +235,6 @@ section {
 .flex-cont {
     display: flex;
     flex-direction: row;
-    /* align-items: center;
-    text-align: center; */
-
 }
 
 .flex-div-2 {
@@ -311,6 +308,11 @@ About section
     font-size: 1rem;
 }
 
+.download-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .download {
     text-align: center;
     padding-top: 2rem;
@@ -340,10 +342,16 @@ About section
     color: #365486;
 }
 
+@media (max-width: 750px){
+    .download-btns{
+        flex-direction:column;
+    }
+}
+
 @media(max-width:540px) {
     .download button {
-        width: 20rem;
-        font-size: 0.85rem;
+        width: 14rem;
+        font-size: 0.8rem;
     }
 }
 
