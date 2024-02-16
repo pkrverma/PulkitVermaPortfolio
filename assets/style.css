@@ -8,6 +8,7 @@
 body {
     background-color: #dbeded;
     background-color: #ffffff;
+    /* background-color: #fff89a36; */
     font-family: 'Taviraj', serif;
 }
 
@@ -17,7 +18,7 @@ nav {
     justify-content: space-between;
     z-index: 2;
     position: fixed;
-    background-color: #365486;
+    background-color: #086E7D;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.215);
     align-items: center;
     height: 4rem;
@@ -33,7 +34,7 @@ nav .title {
 
 nav .title a {
     text-decoration: none;
-    color: #ffffff;
+    color: #FFF89A;
     cursor: pointer;
 }
 
@@ -106,7 +107,7 @@ nav div.nav-tab ul {
 Banner section
 ====================== */
 .banner {
-    background: url("img/banner.jpeg")no-repeat;
+    background: url("../img/banner.jpeg")no-repeat;
     height: 100vh;
     /* background-position: cover; */
     background-position: right;
@@ -126,9 +127,23 @@ Banner section
     color: #FFB996;
 }
 
-.tagline {
-    color: #fefefe;
-    font-size: 1.5rem;
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-size:1.5rem;
+  /* text-align:center; */
+  /* height:200px;
+  width:600px; */
+  display:block;
+  color:white;
+  margin:0;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:-6px;
 }
 
 @media (max-width:720px) {
@@ -136,7 +151,7 @@ Banner section
         font-size: 2.3rem;
     }
 
-    .tagline {
+    .console-container {
         font-size: 1.2rem;
     }
 }
@@ -146,7 +161,7 @@ Banner section
         font-size: 1.5rem;
     }
 
-    .tagline {
+    .console-container {
         font-size: 1rem;
     }
 }
@@ -156,7 +171,7 @@ Banner section
         font-size: 1.2rem;
     }
 
-    .tagline {
+    .console-container {
         font-size: 0.8rem;
     }
 }
@@ -184,14 +199,14 @@ section {
 }
 
 .sub-head {
-    color: #274a87;
+    color: #086E7D;
     font-size: 2rem;
     padding-bottom: 1rem;
 }
 
 .sub-head-2 {
     font-size: 1.4rem;
-    color: #0088ab;
+    color: 086E7D;
 }
 
 .content {
@@ -211,7 +226,7 @@ section {
     font-size: 1rem;
     padding-right: 1rem;
     margin: auto 0.1px;
-    color: #365486;
+    color: #086E7D;
     text-align: center;
 }
 
@@ -308,11 +323,12 @@ About section
     font-size: 1rem;
 }
 
-.download-btns{
+.download-btns {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .download {
     text-align: center;
     padding-top: 2rem;
@@ -330,21 +346,21 @@ About section
     width: 25rem;
     cursor: pointer;
     border-radius: 2rem;
-    background-color: #365486;
+    background-color: #086E7D;
     color: #ffffff;
     border: 2px solid #2c497add;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .download button:hover {
-    border: #365486 2px solid;
+    border: #086E7D 2px solid;
     background-color: #DCF2F1;
-    color: #365486;
+    color: #086E7D;
 }
 
-@media (max-width: 750px){
-    .download-btns{
-        flex-direction:column;
+@media (max-width: 750px) {
+    .download-btns {
+        flex-direction: column;
     }
 }
 
@@ -386,7 +402,7 @@ Skill section
     font-size: 1rem;
     padding-right: 1rem;
     padding-top: 0.5rem;
-    color: #365486;
+    color: #086E7D;
     text-align: center;
 }
 
@@ -442,7 +458,7 @@ Project section
     padding: 0.5rem;
     margin: 1rem 1rem 0.5rem 1rem;
     border-radius: 10px;
-    background-color: #365486;
+    background-color: #086E7D;
     color: #ffffff;
     border: 2px solid #2c497a;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -452,7 +468,7 @@ Project section
 .div-box button:hover {
     cursor: pointer;
     background-color: #DCF2F1;
-    color: #365486;
+    color: #086E7D;
 }
 
 @media(max-width:540px) {
@@ -502,11 +518,27 @@ Contact section
     border-top-right-radius: 1.25rem;
 }
 
+.contact-div{
+    padding: 1rem 1rem;
+    width: 2rem;
+    margin: 0.5rem;
+    text-align: center;
+    background-color:#ffffff ;
+    box-shadow: inset -1px 0.5px 10px rgba(140, 140, 140, 0.696);
+    border-radius: 50%;
+}
+
+.contact-div i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
 .contact-div-box {
-    padding: 0.5rem 0;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #ffffff;
 }
@@ -525,9 +557,9 @@ Contact section
 }
 
 .con-icon {
-    padding: 0 1rem;
+    padding: 0.25rem 0.25rem;
     font-size: 1.3rem;
-    color: #365486;
+    color: #086E7D;
 }
 
 .first {
