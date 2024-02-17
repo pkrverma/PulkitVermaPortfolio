@@ -1,7 +1,7 @@
 // Navbar button
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.marginLeft = "0";
 }
 
 function closeNav() {
@@ -13,7 +13,7 @@ function yourFunction() {
   const menuBtn = document.getElementById('myNavBar');
 
   if (window.innerWidth <= 720) {
-    menuBtn.innerHTML = '<div class="title"><h2><a href="#banner" aria-current="page">Pulkit Kumar Verma</a></h2></div><div class="nav-tab sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><ul><li><a href="#about">About</a></li><li><a href="#skill">Skills</a></li><li><a href="#project">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div><div id="main"><button class="openbtn " onclick="openNav()"><i class="fa-solid fa-bars"></i></button></div>';
+    menuBtn.innerHTML = '<div class="title"><h2><a href="#banner" aria-current="page">Pulkit Kumar Verma</a></h2></div><div class="nav-tab sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a><ul><li><a href="#about">About</a></li><li><a href="#skill">Skills</a></li><li><a href="#project">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div><div id="main"><button class="openbtn " onclick="openNav()"><i class="fa-solid fa-bars"></i></button></div>';
   } else {
     menuBtn.innerHTML = '<div class="title"><h2><a href="#banner" aria-current="page">Pulkit Kumar Verma</a></h2></div><div class="nav-tab sidebar" id="mySidebar"><ul><li><a href="#about">About</a></li><li><a href="#skill">Skills</a></li><li><a href="#project">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div>';
   }
@@ -21,16 +21,6 @@ function yourFunction() {
 
 window.onload = yourFunction;
 window.onresize = yourFunction;
-
-// const main = document.getElementById('mySidebar');
-
-
-// if (window.innerWidth <= 720) {
-//   main.innerHTML = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><div id="main"><button class="openbtn " onclick="openNav()"><i class="fa-solid fa-bars"></i></button></div>';
-// }
-// else {
-//   main.innerHTML = '';
-// }
 
 
 // banner text animatiom
