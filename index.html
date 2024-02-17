@@ -11,7 +11,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assets/style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,22 +20,33 @@
     <link rel="icon" href="img/logo.png" />
     <title>Portfolio</title>
   </head>
+
   <body>
     <!-- ===========================================
     -----------------Navigation Section------------------
     =========================================== -->
-    <nav>
+    <nav id="myNavBar">
       <div class="title">
-        <h2><a href="#banner">Pulkit Kumar Verma</a></h2>
+        <h2><a href="#banner" aria-current="page">Pulkit Kumar Verma</a></h2>
       </div>
-      <div class="nav-tab">
+
+      <div class="nav-tab sidebar" id="mySidebar">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skill">Skills</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skill">Skills</a>
+          </li>
+          <li>
+            <a href="#project">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
+      
     </nav>
 
     <!-- ===========================================
@@ -211,7 +221,9 @@
             </div>
           </div>
         </div>
-        <div class="sub-head content"><p>Content Writing</p></div>
+        <div class="sub-head content">
+          <p>Content Writing</p>
+        </div>
       </div>
     </section>
 
@@ -226,11 +238,14 @@
           <p class="sub-head-2 project-head">
             Techno: Online Learning Platform
           </p>
-          <p class="project-desc">
-            A multi-page website for distance learning, made with mainly HTML5,
-            and CSS with selected required features including a working feedback
-            form using MySQL (Local server) for the data storage.
-          </p>
+          <div class="sidebar-desc">
+            <p class="project-desc">
+              A multi-page website for distance learning, made with mainly
+              HTML5, and CSS with selected required features including a working
+              feedback form using MySQL (Local server) for the data storage.
+            </p>
+          </div>
+
           <div class="project-link">
             <a href="https://techno-learn.github.io/Techno/" target="_blank"
               ><button>Visit Website</button></a
@@ -244,13 +259,14 @@
           <p class="sub-head-2 project-head">
             Luxurious Creation: Visualize Around Yourself with AR
           </p>
-
-          <p class="project-desc">
-            AR-based furniture-selling multi-page website using HTML, CSS,
-            JavaScript, MySQL and 3D Models to visualise items in the required
-            space. It helps customer to gain confident in getting item fit while
-            buying online.
-          </p>
+          <div class="sidebar-desc">
+            <p class="project-desc">
+              AR-based furniture-selling multi-page website using HTML, CSS,
+              JavaScript, MySQL and 3D Models to visualise items in the required
+              space. It helps customer to gain confident in getting item fit
+              while buying online.
+            </p>
+          </div>
           <div class="project-link">
             <a
               href="https://luxurious-creation.github.io/LuxiriousCreation/"
@@ -270,10 +286,12 @@
         <div class="sub-head">Other Projects</div>
         <div class="desc div-box">
           <p class="sub-head-2 project-head">Spotify Website Clone</p>
-          <p class="project-desc">
-            Spotify’s homepage includes a playback button, sidebar and every
-            element with the help of HTML5 and CSS.
-          </p>
+          <div class="sidebar-desc">
+            <p class="project-desc">
+              Spotify’s homepage includes a playback button, sidebar and every
+              element with the help of HTML5 and CSS.
+            </p>
+          </div>
           <div class="project-link">
             <a href="https://pkrverma.github.io/SpotifyClone/" target="_blank"
               ><button>Visit Website</button></a
@@ -286,10 +304,12 @@
 
         <div class="desc div-box">
           <p class="sub-head-2 project-head">Jewellery Shop’s Website</p>
-          <p class="project-desc">
-            A website designed with purely HTML and CSS for Jewellery shop to
-            let the customer connect online and get details from it.
-          </p>
+          <div class="sidebar-desc">
+            <p class="project-desc">
+              A website designed with purely HTML and CSS for Jewellery shop to
+              let the customer connect online and get details from it.
+            </p>
+          </div>
           <div class="project-link">
             <a
               href="https://pkrverma.github.io/JewelleryWebsite/"
@@ -306,10 +326,13 @@
 
         <div class="desc div-box bot-border">
           <p class="sub-head-2 project-head">Landing Page</p>
-          <p class="project-desc">
-            A landing page for a Tech Community using HTML, CSS and JavaScript.
-            It has countdown timer for the upcoming event with various Tab.
-          </p>
+          <div class="sidebar-desc">
+            <p class="project-desc">
+              A landing page for a Tech Community using HTML, CSS and
+              JavaScript. It has countdown timer for the upcoming event with
+              various Tab.
+            </p>
+          </div>
           <div class="project-link">
             <a href="https://pkrverma.github.io/landingPage/" target="_blank"
               ><button>Visit Website</button></a
@@ -375,7 +398,7 @@
         <div class="contact-div-box">
           <div class="contact-div">
             <a href="mailto:pulkit18012003@gmail.com">
-            <i class="fa-regular fa-envelope con-icon gmail"></i
+              <i class="fa-regular fa-envelope con-icon gmail"></i
             ></a>
           </div>
 

@@ -5,6 +5,12 @@
     scroll-behavior: smooth;
 }
 
+h1,
+h2,
+p {
+    margin-bottom: 0;
+}
+
 body {
     background-color: #dbeded;
     background-color: #ffffff;
@@ -30,17 +36,21 @@ nav .title {
     padding-left: 1.5rem;
     font-family: 'Allura', cursive;
     font-size: 1.5rem;
+    margin: auto 0;
 }
 
 nav .title a {
     text-decoration: none;
     color: #FFF89A;
+    margin: auto 0;
     cursor: pointer;
 }
 
 nav div.nav-tab ul {
     display: flex;
     flex-direction: row;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .nav-tab li {
@@ -52,17 +62,83 @@ nav div.nav-tab ul {
     font-size: 1rem;
 }
 
-@media (max-width:720px) {
-    nav .title {
-        font-size: 1rem;
+@media (max-width:721px) {
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #086d7de0;
+        overflow-x: hidden;
+        padding-top: 65px;
+        transition: 0.5s;
     }
+
+    nav div.nav-tab ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        padding-left: 1.5rem;
+        color: #FFC900;
+        text-align: left;
+        display: block;
+        transition: 0.3s;
+    }
+
+    
+    .sidebar a:hover {
+        color: #f2db87;
+    }
+
+    
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+    .openbtn {
+        font-size: 25px;
+        cursor: pointer;
+        background-color: #086E7D;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50%;
+        border: none;
+        text-align: center;
+        transition: background-color .5s;
+    }
+
+    .openbtn:hover {
+        background-color: #218898;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+
+    .nav-tab ul li a{
+        color: #FFF89A;
+        padding-bottom: 3rem;
+    }
+
+    /* nav .title {
+        font-size: 1rem;
+    } */
 
     .nav-tab li {
         padding: 0rem 0.5rem;
-    }
-
-    .nav-tab li a {
-        font-size: 0.75rem;
     }
 
     nav .title {
@@ -70,31 +146,37 @@ nav div.nav-tab ul {
     }
 }
 
-@media (max-width:480px) {
+/* @media (max-width:480px) {
     nav .title {
         font-size: 0.75rem;
+    } 
+} */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
     }
 }
 
 @media (max-width:430px) {
-    nav .title {
+    /* nav .title {
         font-size: 0.65rem;
-    }
+    } */
 
     nav .title {
         padding-left: 0.5rem;
     }
 }
 
-@media (max-width:400px) {
-    nav .title {
+/* @media (max-width:400px) {
+     nav .title {
         font-size: 0.55rem;
-    }
-
-    .nav-tab li a {
-        font-size: 0.65rem;
-    }
-}
+    } 
+} */
 
 .nav-tab li a {
     text-decoration: none;
@@ -128,22 +210,24 @@ Banner section
 }
 
 .hidden {
-  opacity:0;
+    opacity: 0;
 }
+
 .console-container {
-  font-size:1.5rem;
-  /* text-align:center; */
-  /* height:200px;
+    font-size: 1.5rem;
+    /* text-align:center; */
+    /* height:200px;
   width:600px; */
-  display:block;
-  color:white;
-  margin:0;
+    display: block;
+    color: white;
+    margin: 0;
 }
+
 .console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:-6px;
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: -6px;
 }
 
 @media (max-width:720px) {
@@ -206,7 +290,7 @@ section {
 
 .sub-head-2 {
     font-size: 1.4rem;
-    color: 086E7D;
+    color: #086E7D;
 }
 
 .content {
@@ -252,6 +336,10 @@ section {
     flex-direction: row;
 }
 
+#edu-desc .flex-cont {
+    margin-bottom: 0.75rem;
+}
+
 .flex-div-2 {
     display: flex;
     flex-direction: column;
@@ -272,7 +360,7 @@ section {
     }
 
     .icon {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .desc {
@@ -295,6 +383,10 @@ section {
 
     .div-box {
         padding: 0.75rem;
+    }
+
+    .desc {
+        font-size: 0.85rem;
     }
 
     .icon {
@@ -329,9 +421,10 @@ About section
     justify-content: space-around;
 }
 
-.download {
+div .download {
     text-align: center;
-    padding-top: 2rem;
+    align-items: center;
+    padding: 0.5rem;
 }
 
 .download i {
@@ -343,7 +436,7 @@ About section
     padding: 0.55rem;
     font-family: 'Krona One', sans-serif;
     font-size: 1rem;
-    width: 25rem;
+    width: 20rem;
     cursor: pointer;
     border-radius: 2rem;
     background-color: #086E7D;
@@ -442,9 +535,17 @@ Project section
     padding-bottom: 1rem;
 }
 
+.sidebar-desc {
+    background-color: #FFC900;
+    padding-left: 0.5rem;
+}
+
 .project-desc {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    background-color: #ffffff;
     text-align: justify;
+    font-size: 1.1rem;
+    color: #00000096;
 }
 
 .project-link {
@@ -469,6 +570,14 @@ Project section
     cursor: pointer;
     background-color: #DCF2F1;
     color: #086E7D;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-size: 13px;
 }
 
 @media(max-width:540px) {
@@ -497,7 +606,7 @@ Project section
 
 @media (max-width:400px) {
     .div-box button {
-        padding: 0.5rem 4rem;
+        padding: 0.5rem 2rem;
         font-size: 0.65rem;
     }
 
@@ -518,17 +627,17 @@ Contact section
     border-top-right-radius: 1.25rem;
 }
 
-.contact-div{
+.contact-div {
     padding: 1rem 1rem;
-    width: 2rem;
+    /* width: 2rem; */
     margin: 0.5rem;
     text-align: center;
-    background-color:#ffffff ;
+    background-color: #ffffff;
     box-shadow: inset -1px 0.5px 10px rgba(140, 140, 140, 0.696);
     border-radius: 50%;
 }
 
-.contact-div i{
+.contact-div i {
     cursor: pointer;
     font-size: 1.5rem;
 }
@@ -606,6 +715,10 @@ Contact section
     .con-icon {
         font-size: 1rem;
     }
+
+    .contact-div {
+        padding: 0.75rem 0.75rem;
+    }
 }
 
 @media(max-width:400px) {
@@ -620,6 +733,10 @@ Contact section
     .con-icon {
         font-size: 0.85rem;
     }
+
+    .contact-div {
+        padding: 0.5rem 0.5rem;
+    }
 }
 
 /* ======================
@@ -630,7 +747,7 @@ Footer section
     /* padding: 1rem; */
     background-color: #343434;
     height: 4rem;
-    color: #dbeded;
+    color: #fdedb1;
     font-family: 'Taviraj', serif;
     display: flex;
     flex-direction: row;
