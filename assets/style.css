@@ -669,7 +669,7 @@ textarea {
     }
 }
 
-@media (max-width:400px){
+@media (max-width:350px){
     .div-box button{
         width: 12rem;
     }
