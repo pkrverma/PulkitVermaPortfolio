@@ -653,6 +653,7 @@ textarea {
 
     .div-box button {
         padding: 0.5rem 4rem;
+        width: 16rem;
     }
 }
 
