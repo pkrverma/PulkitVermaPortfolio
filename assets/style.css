@@ -12,9 +12,7 @@ p {
 }
 
 body {
-    background-color: #dbeded;
     background-color: #ffffff;
-    /* background-color: #fff89a36; */
     font-family: 'Taviraj', serif;
 }
 
@@ -68,7 +66,7 @@ nav div.nav-tab ul {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 2;
+        z-index: 3;
         top: 0;
         left: 0;
         overflow-x: hidden;
