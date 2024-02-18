@@ -53,11 +53,21 @@ nav div.nav-tab ul {
 
 .nav-tab li {
     list-style: none;
-    padding: 0rem 1.1rem;
+    padding: 0rem 1rem;
 }
 
 .nav-tab li a {
     font-size: 1rem;
+}
+
+@media (max-width:800px){
+    .nav-tab li a{
+        font-size:0.85rem ;
+    }
+
+    .nav-tab li{
+        padding: 0rem 0.75rem;
+    }
 }
 
 @media (max-width:720px) {
@@ -626,12 +636,11 @@ Contact section
 
 .contact-div {
     padding: 1rem 1rem;
-    /* width: 2rem; */
     margin: 0.5rem;
     text-align: center;
     background-color: #ffffff;
     box-shadow: inset -1px 0.5px 10px rgba(140, 140, 140, 0.696);
-    border-radius: 50%;
+    border-radius: 1rem;
 }
 
 .contact-div i {
@@ -643,10 +652,27 @@ Contact section
     padding: 1rem 1rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: #ffffff;
+}
+
+.contact-divs {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "gmail linkedin"
+        "github instagram"
+        "telegram twitter";
+    grid-template-rows: 5rem 5rem;
+    grid-template-columns: 5rem 1fr 5rem;
+}
+
+.contact-img img {
+    height: 10rem;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .contact-div-box .sub-head-2 {
@@ -700,6 +726,10 @@ Contact section
     color: #2DA3E0;
 }
 
+.twitter {
+    color: black;
+}
+
 @media(max-width:540px) {
     .conact-box {
         font-size: 0.75rem;
@@ -709,13 +739,34 @@ Contact section
         font-size: 1rem;
     }
 
-    .con-icon {
+    .con-icon i{
         font-size: 1rem;
+    }
+}
+
+@media(max-width:500px) {
+    .contact-div-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-img img{
+        height: 60vh;
+        margin-bottom: 1rem;
+    }
+    .contact-divs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 80%;
     }
 
     .contact-div {
         padding: 0.75rem 0.75rem;
-    }
+    } 
+
 }
 
 @media(max-width:400px) {
@@ -731,8 +782,22 @@ Contact section
         font-size: 0.85rem;
     }
 
+    .contact-divs {
+        width: 80%;
+    }
+
+    .contact-img img{
+        height: 40vh;
+    }
+}
+
+@media(max-width:360px){
     .contact-div {
         padding: 0.5rem 0.5rem;
+    }
+
+    .contact-divs {
+        width: 100%;
     }
 }
 
@@ -741,7 +806,6 @@ Footer section
 ====================== */
 
 .footer {
-    /* padding: 1rem; */
     background-color: #343434;
     height: 4rem;
     color: #fdedb1;
