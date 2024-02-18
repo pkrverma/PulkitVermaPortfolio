@@ -1,3 +1,3 @@
 https://pkrverma.github.io/PulkitVermaPortfolio/
-# CodSoftPortfolio
+# PulkitPortfolio
 One of My first internship project
