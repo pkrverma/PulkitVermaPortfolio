@@ -60,12 +60,12 @@ nav div.nav-tab ul {
     font-size: 1rem;
 }
 
-@media (max-width:800px){
-    .nav-tab li a{
-        font-size:0.85rem ;
+@media (max-width:800px) {
+    .nav-tab li a {
+        font-size: 0.85rem;
     }
 
-    .nav-tab li{
+    .nav-tab li {
         padding: 0rem 0.75rem;
     }
 }
@@ -549,6 +549,7 @@ Project section
 
 .project-desc {
     padding-left: 0.5rem;
+    padding-right: 0.3rem;
     background-color: #ffffff;
     text-align: justify;
     font-size: 1.1rem;
@@ -660,6 +661,7 @@ Contact section
 
 .contact-divs {
     display: grid;
+    margin: auto 0;
     width: 100%;
     height: 100%;
     grid-template-areas:
@@ -667,11 +669,11 @@ Contact section
         "github instagram"
         "telegram twitter";
     grid-template-rows: 5rem 5rem;
-    grid-template-columns: 5rem 1fr 5rem;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 .contact-img img {
-    height: 10rem;
+    height: 15rem;
     filter: drop-shadow(5px 5px 5px #222);
 }
 
@@ -730,6 +732,13 @@ Contact section
     color: black;
 }
 
+@media(max-width:580px) {
+    .contact-divs {
+        grid-template-rows: 5rem 5rem 5rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media(max-width:540px) {
     .conact-box {
         font-size: 0.75rem;
@@ -739,22 +748,23 @@ Contact section
         font-size: 1rem;
     }
 
-    .con-icon i{
+    .con-icon i {
         font-size: 1rem;
     }
 }
 
 @media(max-width:500px) {
-    .contact-div-box{
+    .contact-div-box {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .contact-img img{
+    .contact-img img {
         height: 60vh;
         margin-bottom: 1rem;
     }
+
     .contact-divs {
         display: flex;
         flex-direction: row;
@@ -765,7 +775,7 @@ Contact section
 
     .contact-div {
         padding: 0.75rem 0.75rem;
-    } 
+    }
 
 }
 
@@ -786,12 +796,12 @@ Contact section
         width: 80%;
     }
 
-    .contact-img img{
+    .contact-img img {
         height: 40vh;
     }
 }
 
-@media(max-width:360px){
+@media(max-width:360px) {
     .contact-div {
         padding: 0.5rem 0.5rem;
     }
