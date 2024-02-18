@@ -633,11 +633,12 @@ textarea {
 
 @media(max-width:540px) {
     .project-link {
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
     }
 
     .div-box button {
+        width: 19rem;
         padding: 0.5rem 1rem;
     }
 }
@@ -660,10 +661,17 @@ textarea {
     .div-box button {
         padding: 0.5rem 2rem;
         font-size: 0.65rem;
+        width: 15rem;
     }
 
     .project-desc {
         font-size: 0.85rem;
+    }
+}
+
+@media (max-width:400px){
+    .div-box button{
+        width: 12rem;
     }
 }
 
