@@ -1,522 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allura&family=Archivo+Black&family=Diphylleia&family=Krona+One&family=Taviraj&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="img/logo.png" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-  </head>
 
-  <body>
-    <!-- ===========================================
-    -----------------Navigation Section------------------
-    =========================================== -->
-    <nav id="myNavBar">
-      <div class="title">
-        <h2><a href="#banner" aria-current="page">Pulkit Kumar Verma</a></h2>
-      </div>
+    <!-- =====CSS Files==== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
 
-      <div class="nav-tab sidebar" id="mySidebar">
-        <ul>
-          <li>
-            <a href="#banner">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#skill">Skills</a>
-          </li>
-          <li>
-            <a href="#project">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- ===========================================
-    -----------------banner Section------------------
-    =========================================== -->
-    <section class="banner" id="banner">
-      <div class="banner-div-box">
-        <h2 class="banner-text">Pulkit Kumar Verma</h2>
-        <div class="console-container">
-          <span id="text"></span>
-          <div class="console-underscore" id="console">|</div>
+    <!-- =====Style Switcher==== -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="css/style-switcher.css">
+
+</head>
+
+<body class="">
+    <!-- ====Main Container Start==== -->
+    <div class="main-container">
+        <!-- ====Aside Start==== -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>P</span>ulkit</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
         </div>
-      </div>
-    </section>
+        <!-- ====Aside End==== -->
 
-    <!-- ===========================================
-    -----------------About Section------------------
-    =========================================== -->
-    <section id="about" class="about top-pad">
-      <div class="section-head">About</div>
-      <div class="content">
-        <div class="sub-head">About Me</div>
-        <p class="desc" id="about-desc">
-          I am currently a 3<sup>rd</sup> year student pursuing B.Tech in
-          Computer Science and Engineering at University of Engineering and
-          Management, Jaipur. During my academic journey, I have developed a
-          keen interest in front-end web development. The ever-evolving world of
-          web technologies fascinates me, and I am constantly seeking
-          opportunities to expand my skills in this domain. I am serving as Web
-          Developer and Content Writer in The Speech Society as core team
-          member.
-        </p>
-      </div>
-      <div class="content">
-        <div class="sub-head">Education</div>
-        <div class="desc" id="edu-desc">
-          <div class="div-box">
-            <div class="flex-cont">
-              <i class="fa-solid fa-user-graduate icon"></i>
-              <p class="sub-head-2">
-                Bachelor of Technology (Computer Science and Engineering)- 3<sup
-                  >rd</sup
-                >
-                Year
-              </p>
-            </div>
-            <p class="inst">University of Engineering & Management, Jaipur</p>
-            <p class="marks">Marks: 8.54 CGPA (Upto 2<sup>nd</sup> Year)</p>
-          </div>
-          <div class="div-box">
-            <div class="flex-cont">
-              <i class="fa-solid fa-user-graduate icon"></i>
-              <p class="sub-head-2">Senior Seconday Education (CBSE)</p>
-            </div>
-            <p class="inst">DAV Public School, Lakhisarai</p>
-            <p class="marks">Marks: 82.8%</p>
-          </div>
-          <div class="div-box bot-border">
-            <div class="flex-cont">
-              <i class="fa-solid fa-user-graduate icon"></i>
-              <p class="sub-head-2">Seconday Education (CBSE)</p>
-            </div>
-            <p class="inst">DAV Public School, Lakhisarai</p>
-            <p class="marks">Marks: 89.4%</p>
-          </div>
-        </div>
-      </div>
+        <!-- ====Main Content Start==== -->
+        <div class="main-content">
 
-      <!-- Expreinece -->
-      <div class="content">
-        <div class="sub-head">Experience</div>
-        <div class="desc" id="edu-desc">
-          <div class="div-box">
-            <div class="flex-cont">
-              <i class="fa-solid fa-id-card icon"></i>
-              <p class="sub-head-2">
-                CodSoft (Web Development)&nbsp;&nbsp;&nbsp;<span
-                  class="completed task-status"
-                  ><i class="fa-solid fa-circle-check"></i>&nbsp;Complete</span
-                >
-              </p>
-            </div>
-            <p class="position">Position: Intern</p>
-            <p class="position">
-              Duration: 4 Weeks (05 Jan 2024 - 05 Feb 2024)
-            </p>
-            <p class="position">ID: CS11WX155492</p>
-            <div class="expLink">
-              <a href="files/CodSoft/CodSoft Intern.pdf" target="_blank"
-                ><button class="expBtn">Offer Letter</button></a
-              >
-              <!-- <a href="files/CodSoft/CodSoft Intenship.pdf"
-                ><button class="expBtn">Completion Certificate</button></a
-              > -->
-            </div>
-          </div>
-          <div class="div-box">
-            <div class="flex-cont">
-              <i class="fa-solid fa-id-card icon"></i>
-              <p class="sub-head-2">
-                CodeAlpha (Web Development)&nbsp;&nbsp;&nbsp;<span
-                class="completed task-status"
-                ><i class="fa-solid fa-circle-check"></i>&nbsp;Complete</span
-                >
-              </p>
-              <!-- <p class="sub-head-2">
-                CodeAlpha (Web Development)&nbsp;&nbsp;&nbsp;<span
-                  class="ongoing task-status"
-                  ><i class="fa-solid fa-clock"></i>&nbsp;Ongoing</span
-                >
-              </p> -->
-            </div>
-            <p class="position">Position: Intern</p>
-            <p class="position">
-              Duration: 4 Weeks (01 Feb 2024 - 29 Feb 2024)
-            </p>
-            <p class="position">ID: CA/AA/37975</p>
-            <div class="expLink">
-              <a href="files/CodeAlpha/CodeAlpha Intern.pdf" target="_blank"
-                ><button class="expBtn">Offer Letter</button></a
-              >
-            </div>
-          </div>
+            <!-- ====Home Section Start==== -->
+            <section class="home active section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name"> Pulkit Kumar Verma</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing"></span></h3>
+                            <p>Innovative tech enthusiast skilled in AR, web, and Android development, with a passion
+                                for problem-solving and impactful solutions.</p>
+                                <a href="https://drive.google.com/uc?export=download&id=1OBuAdjBCBXCx1w_mLrtaEyKUSGySIbZA" class="btn" download="Pulkit_Kumar_Verma_Resume.pdf">Download Resume</a>
+                        </div>
+                        <div class="home-img">
+                            <img src="images/hero.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====Home Section End==== -->
+
+            <!-- ====About Section Start==== -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Pulkit Kumar Verma and to be <span>Software Engineer</span></span></h3>
+                                    <p>I am a highly motivated and adaptable individual with a
+                                        passion for learning and personal growth. Known for my strong communication
+                                        skills and ability to connect with people, I excel in both collaborative and
+                                        independent work environments. My fluency in Hindi and English enables me to
+                                        interact effectively in diverse settings. With a positive attitude and a
+                                        problem-solving mindset, I am committed to achieving excellence and contributing
+                                        meaningfully to every opportunity I undertake.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Websie: <span><a href="http://www.pulkitkrverma.tech" class="link-attach" target="_blank">www.pulkitkrverma.tech</a></span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email: <span><a href="mailto:contact.pkrverma@gmail.com" class="link-attach" target="_blank">contact.pkrverma@gmail.com</a></span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree: <span>Bachelor of Technology (CSE)</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City: <span>Jaipur</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Github: <span><a href="https://github.com/pkrverma" class="link-attach" target="_blank">pkrverma</a></span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Codolio: <span><a href="https://codolio.com/profile/pulkitkrverma/card" class="link-attach" target="_blank">pulkitkrverma</a></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 86%;"></div>
+                                                <div class="skill-percent">86%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 76%;"></div>
+                                                <div class="skill-percent">76%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Javascript</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 55%;"></div>
+                                                <div class="skill-percent">55%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Java</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 40%;"></div>
+                                                <div class="skill-percent">40%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>C/C++</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 55%;"></div>
+                                                <div class="skill-percent">55%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+
+                                                <!-- ====Timeline Item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2022 - 2026
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor of Technology (CSE)</h4>
+                                                    <p class="timeline-text">University of Engineering & Management,
+                                                        Jaipur</p>
+                                                    <p class="timeline-text">GPA: 8.76 (overall)</p>
+                                                </div>
+
+                                                <!-- ====Timeline Item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Senior Secondary Education</h4>
+                                                    <p class="timeline-text">Central Board of Secondary Education</p>
+                                                    <p class="timeline-text">Percentage: 82.8%</p>
+                                                </div>
+
+                                                <!-- ====Timeline Item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020
+                                                    </h3>
+                                                    <h4 class="timeline-title">Secondary Education</h4>
+                                                    <p class="timeline-text">Central Board of Secondary Education</p>
+                                                    <p class="timeline-text">Percentage: 89.4%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+
+                                                <!-- ====Timeline Item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Jul '24 - Sep '24
+                                                    </h3>
+                                                    <h4 class="timeline-title">Employability Skills Job Ready Intern
+                                                    </h4>
+                                                    <p class="timeline-text">EduSkills Foundation (Cohort-9)</p>
+                                                    <p class="timeline-text">
+                                                        <li class="timeline-text">Developed advanced communication
+                                                            skills to improve professional interactions.</li>
+                                                    </p>
+                                                    <p class="timeline-text">
+                                                        <li class="timeline-text">Enhanced efficiency in managing and
+                                                            engaging in virtual and in-person interactions.</li>
+                                                    </p>
+                                                    <p class="timeline-text">
+                                                        <li class="timeline-text">Built confidence and refined
+                                                            personality traits to support a strong professional
+                                                            presence.</li>
+                                                    </p>
+                                                </div>
+
+                                                <!-- ====Timeline Item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Apr '24 - Jun '24
+                                                    </h3>
+                                                    <h4 class="timeline-title">Android Development Intern</h4>
+                                                    <p class="timeline-text">EduSkills Foundation (Cohort-8)</p>
+                                                    <p class="timeline-text">
+                                                        <li class="timeline-text">Specialized in Kotlin programming and
+                                                            Jetpack Compose UI design.</li>
+                                                    </p>
+                                                    <p class="timeline-text">
+                                                        <li class="timeline-text">Enhanced app performance by
+                                                            implementing industry best practices.</li>
+                                                    </p>
+                                                    <p class="timeline-text">
+                                                        <li class="timeline-text">Developed intuitive and responsive
+                                                            mobile app layouts.</li>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====About Section End==== -->
+
+            <!-- ====Service Section Start==== -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ====Service item Start==== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>App Development</h4>
+                                <p>Building scalable, high-performance mobile applications.</p>
+                            </div>
+                        </div>
+                        <!-- ====Service item End==== -->
+
+                        <!-- ====Service item Start==== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Frontend Development</h4>
+                                <p>Crafting high-performance, mobile-optimized front-end solutions.</p>
+                            </div>
+                        </div>
+                        <!-- ====Service item End==== -->
+
+                        <!-- ====Service item Start==== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>UI/UX Design</h4>
+                                <p>Designing user-focused interfaces for optimal navigation and engagement.</p>
+                            </div>
+                        </div>
+                        <!-- ====Service item End==== -->
+
+                        <!-- ====Service item Start==== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>C/C++ Programming</h4>
+                                <p>Developing efficient, high-performance C/C++ software solutions.</p>
+                            </div>
+                        </div>
+                        <!-- ====Service item End==== -->
+                        <!-- ====Service item Start==== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-solid fa-globe"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Designing websites that blend aesthetics with exceptional usability.</p>
+                            </div>
+                        </div>
+                        <!-- ====Service item End==== -->
+                        <!-- ====Service item Start==== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-solid fa-pen-fancy"></i>
+                                </div>
+                                <h4>Content Writing</h4>
+                                <p>Crafting compelling content that connects, engages, and drives results.</p>
+                            </div>
+                        </div>
+                        <!-- ====Service item End==== -->
+                    </div>
+                </div>
+            </section>
+            <!-- ====Service Section End==== -->
+
+            <!-- ====Portfolio Section Start==== -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Projects: </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <!-- ====Portfolio Item Start==== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ====Portfolio Item End==== -->
+
+                        <!-- ====Portfolio Item Start==== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ====Portfolio Item End==== -->
+
+                        <!-- ====Portfolio Item Start==== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ====Portfolio Item End==== -->
+
+                        <!-- ====Portfolio Item Start==== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ====Portfolio Item End==== -->
+
+                        <!-- ====Portfolio Item Start==== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-5.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ====Portfolio Item End==== -->
+
+                        <!-- ====Portfolio Item Start==== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ====Portfolio Item End==== -->
+
+                    </div>
+                </div>
+            </section>
+            <!-- ====Portfolio Section End==== -->
+
+            <!-- ====Contact Section Start==== -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Question?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+
+                        <!-- ====Contact Info Item Start==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <div class="fa fa-brands fa-linkedin-in"></div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/pulkitkrverma" class="link-attach" target="_blank">pulkitkrverma</a></p>
+                            </div>
+                        </div>
+                        <!-- ====Contact Info Item End==== -->
+
+                        <!-- ====Contact Info Item Start==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <div class="fa fa-brands fa-instagram"></div>
+                                <h4>Instagram</h4>
+                                <p><a href="https://www.instagram.com/pk_verma1823" class="link-attach" target="_blank">pk_verma1823</a></p>
+                            </div>
+                        </div>
+                        <!-- ====Contact Info Item End==== -->
+
+                        <!-- ====Contact Info Item Start==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <div class="fa fa-envelope"></div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:contact.pkrverma@gmail.com" class="link-attach" target="_blank">contact.pkrverma@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <!-- ====Contact Info Item End==== -->
+
+                        <!-- ====Contact Info Item Start==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <div class="fa fa-globe"></div>
+                                <h4>Website</h4>
+                                <p><a href="https://www.pulkitkrverma.tech" class="link-attach" target="_blank">www.pulkitkrverma.tech</a></p>
+                            </div>
+                        </div>
+                        <!-- ====Contact Info Item End==== -->
+                    </div>
+
+                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <!-- ====Contact Form==== -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="name" class="form-control"
+                                                placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="subject" id="subject" class="form-control"
+                                                placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" class="form-control"
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn" id="submitBtn">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </section>
+            <!-- ====Contact Section End==== -->
+
         </div>
-      </div>
-    </section>
-    <div class="download-btns">
-      <div class="download">
-        <p>
-          <a
-            href="https://drive.google.com/file/d/1ajzZeNXmVMc28sPzAfql6UJ9bWtt0oW0/view?usp=sharing"
-            ><button>
-              View Resume<i
-                class="fa-solid fa-arrow-up-right-from-square"
-              ></i></button
-          ></a>
-        </p>
-      </div>
-      <div class="download">
-        <p>
-          <a
-            href="files/PulkitVerma.pdf"
-            download="PulkitKumarVerma_Resume"
-            ><button>Download Resume<i class="fa-solid fa-download"></i></button
-          ></a>
-        </p>
-      </div>
+        <!-- ====Main Content End==== -->
+
     </div>
+    <!-- ====Main Container End==== -->
 
-    <!-- ===========================================
-    -----------------Skill Section------------------
-    =========================================== -->
-    <section id="skill" class="skill top-pad">
-      <div class="section-head">Skills</div>
-      <div class="skill-desc">
-        <div class="content">
-          <div class="sub-head">Frontend development</div>
-
-          <div class="div-box flex-div">
-            <i class="fa-brands fa-html5 skill-icon html"></i>
-            <div class="flex-cont flex-div-2">
-              <p class="sub-head-2">HTML</p>
-              <p class="level">
-                Level: <span class="intermediate">Intermediate</span>
-              </p>
-            </div>
-          </div>
-
-          <div class="div-box flex-div">
-            <i class="fa-brands fa-css3-alt skill-icon css"></i>
-            <div class="flex-cont flex-div-2">
-              <p class="sub-head-2">CSS</p>
-              <p class="level">
-                Level: <span class="intermediate">Intermediate</span>
-              </p>
-            </div>
-          </div>
-
-          <div class="div-box flex-div">
-            <i class="fa-brands fa-js skill-icon js"></i>
-            <div class="flex-cont flex-div-2">
-              <p class="sub-head-2">JavaScript</p>
-              <p class="level">Level: <span class="beginner">Beginner</span></p>
-            </div>
-          </div>
-
-          <div class="div-box flex-div">
-            <i class="fa-brands fa-bootstrap skill-icon bs"></i>
-            <div class="flex-cont flex-div-2">
-              <p class="sub-head-2">Bootstrap</p>
-              <p class="level">
-                Level: <span class="intermediate">Intermediate</span>
-              </p>
-            </div>
-          </div>
-
-          <div class="div-box flex-div bot-border">
-            <i class="fa-solid fa-database skill-icon db"></i>
-            <div class="flex-cont flex-div-2">
-              <p class="sub-head-2">Database (MongoDB & SQL)</p>
-              <p class="level">Level: <span class="beginner">Beginner</span></p>
-            </div>
-          </div>
+    <!-- ====Style Switcher Start==== -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
         </div>
-
-        <div class="content">
-          <div class="sub-head">UI/UX Designing</div>
-          <div class="div-box flex-div">
-            <i class="fa-solid fa-swatchbook skill-icon"></i>
-            <div class="flex-cont flex-div-2">
-              <p class="sub-head-2">Wireframing</p>
-              <p class="level">Level: <span class="beginner">Beginner</span></p>
-            </div>
-          </div>
-
-          <div class="div-box flex-div">
-            <i class="fa-solid fa-draw-polygon skill-icon"></i>
-            <div class="flex-cont flex-div-2">
-              <p class="sub-head-2">Prototyping</p>
-              <p class="level">Level: <span class="beginner">Beginner</span></p>
-            </div>
-          </div>
-
-          <div class="div-box flex-div bot-border">
-            <i class="fa-solid fa-wand-magic-sparkles skill-icon"></i>
-            <div class="flex-cont flex-div-2">
-              <p class="sub-head-2">User Experience Designing (UED)</p>
-              <p class="level">Level: <span class="beginner">Beginner</span></p>
-            </div>
-          </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
         </div>
-        <div class="sub-head content">
-          <p>Content Writing</p>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
         </div>
-      </div>
-    </section>
+    </div>
+    <!-- ====Style Switcher End==== -->
 
-    <!-- ===========================================
-    -----------------Project Section------------------
-    =========================================== -->
-    <section id="project" class="project top-pad">
-      <div class="section-head">Project</div>
-      <div class="content">
-        <div class="sub-head">Academic Projects</div>
-        <div class="desc div-box">
-          <p class="sub-head-2 project-head">
-            Techno: Online Learning Platform
-          </p>
-          <div class="sidebar-desc">
-            <p class="project-desc">
-              A multi-page website for distance learning, made with mainly
-              HTML5, and CSS with selected required features including a working
-              feedback form using MySQL (Local server) for the data storage.
-            </p>
-          </div>
+    <!-- ====JS Files==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
 
-          <div class="project-link">
-            <a href="https://techno-learn.github.io/Techno/" target="_blank"
-              ><button>Visit Website</button></a
-            >
-            <a href="https://github.com/Techno-learn/Techno" target="_blank"
-              ><button>Source Code</button></a
-            >
-          </div>
-        </div>
-        <div class="desc div-box bot-border">
-          <p class="sub-head-2 project-head">
-            Luxurious Creation: Visualize Around Yourself with AR
-          </p>
-          <div class="sidebar-desc">
-            <p class="project-desc">
-              AR-based furniture-selling multi-page website using HTML, CSS,
-              JavaScript, MySQL and 3D Models to visualise items in the required
-              space. It helps customer to gain confident in getting item fit
-              while buying online.
-            </p>
-          </div>
-          <div class="project-link">
-            <a
-              href="https://luxurious-creation.github.io/LuxuriousCreation/"
-              target="_blank"
-              ><button>Visit Website</button></a
-            >
-            <a
-              href="https://github.com/Luxurious-Creation/LuxiriousCreation"
-              target="_blank"
-              ><button>Source Code</button></a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="sub-head">Other Projects</div>
-        <div class="desc div-box">
-          <p class="sub-head-2 project-head">Spotify Website Clone</p>
-          <div class="sidebar-desc">
-            <p class="project-desc">
-              Spotify’s homepage includes a playback button, sidebar and every
-              element with the help of HTML5 and CSS.
-            </p>
-          </div>
-          <div class="project-link">
-            <a href="https://pkrverma.github.io/SpotifyClone/" target="_blank"
-              ><button>Visit Website</button></a
-            >
-            <a href="https://github.com/pkrverma/SpotifyClone" target="_blank"
-              ><button>Source Code</button></a
-            >
-          </div>
-        </div>
-
-        <div class="desc div-box">
-          <p class="sub-head-2 project-head">Jewellery Shop’s Website</p>
-          <div class="sidebar-desc">
-            <p class="project-desc">
-              A website designed with purely HTML and CSS for Jewellery shop to
-              let the customer connect online and get details from it.
-            </p>
-          </div>
-          <div class="project-link">
-            <a
-              href="https://pkrverma.github.io/JewelleryWebsite/"
-              target="_blank"
-              ><button>Visit Website</button></a
-            >
-            <a
-              href="https://github.com/pkrverma/JewelleryWebsite"
-              target="_blank"
-              ><button>Source Code</button></a
-            >
-          </div>
-        </div>
-
-        <div class="desc div-box bot-border">
-          <p class="sub-head-2 project-head">Landing Page</p>
-          <div class="sidebar-desc">
-            <p class="project-desc">
-              A landing page for a Tech Community using HTML, CSS and
-              JavaScript. It has countdown timer for the upcoming event with
-              various Tab.
-            </p>
-          </div>
-          <div class="project-link">
-            <a href="https://pkrverma.github.io/landingPage/" target="_blank"
-              ><button>Visit Website</button></a
-            >
-            <a href="https://github.com/pkrverma/landingPage" target="_blank"
-              ><button>Source Code</button></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===========================================
-    -----------------Contact Section------------------
-    =========================================== -->
-    <section id="contact" class="contact top-pad">
-      <div class="section-head">Contact</div>
-      <div class="conact-box">
-        <p class="sub-head">Lets Get Connected</p>
-        <!-- <div class="contact-div-box first">
-          <i class="fa-solid fa-mobile-screen con-icon mobile"></i>
-          <p class="sub-head-2">Mob. No.: <span>+91 6207212232 </span></p>
-        </div> -->
-        <!-- <div class="contact-div-box first">
-          <i class="fa-regular fa-envelope con-icon gmail"></i>
-          <p class="sub-head-2">
-            Email Id:
-            <a href="mailto:pulkit18012003@gmail.com">
-              <span>pulkit18012003@gmail.com </span></a
-            >
-          </p>
-        </div>
-        <div class="contact-div-box">
-          <i class="fa-brands fa-linkedin-in con-icon linkedin"></i>
-          <p class="sub-head-2">
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/pulkitkrverma"
-              >pulkitkrverma</a
-            >
-          </p>
-        </div>
-        <div class="contact-div-box">
-          <i class="fa-brands fa-github con-icon github"></i>
-          <p class="sub-head-2">
-            Github: <a href="https://github.com/pkrverma">pkrverma</a>
-          </p>
-        </div>
-        <div class="contact-div-box">
-          <i class="fa-brands fa-instagram con-icon instagram"></i>
-          <p class="sub-head-2">
-            Instagram:
-            <a href="https://www.instagram.com/pk_verma1823/">pk_verma1823</a>
-          </p>
-        </div>
-
-        <div class="contact-div-box last">
-          <i class="fa-brands fa-telegram con-icon telegram"></i>
-          <p class="sub-head-2">
-            Telegram: <a href="https://t.me/Pulkitkrv">Pulkitkrv</a>
-          </p>
-        </div> -->
-
-        <div class="contact-div-box">
-          <div class="contact-img">
-            <img src="img/Profile-pic2.png" alt="Pulkit Profile Image" />
-          </div>
-          <div class="contact-divs">
-            <div class="contact-div">
-              <a href="mailto:pulkit18012003@gmail.com">
-                <i class="fa-regular fa-envelope con-icon gmail" id="gmail"></i
-              ></a>
-            </div>
-
-            <div class="contact-div">
-              <a href="https://www.linkedin.com/in/pulkitkrverma"
-                ><i
-                  class="fa-brands fa-linkedin-in con-icon linkedin"
-                  id="linkedin"
-                ></i
-              ></a>
-            </div>
-
-            <div class="contact-div">
-              <a href="https://github.com/pkrverma"
-                ><i class="fa-brands fa-github con-icon github" id="github"></i
-              ></a>
-            </div>
-            <div class="contact-div">
-              <a href="https://www.instagram.com/pk_verma1823/"
-                ><i
-                  class="fa-brands fa-instagram con-icon instagram"
-                  id="instagram"
-                ></i
-              ></a>
-            </div>
-            <div class="contact-div">
-              <a href="https://t.me/Pulkitkrv"
-                ><i
-                  class="fa-brands fa-telegram con-icon telegram"
-                  id="telegram"
-                ></i
-              ></a>
-            </div>
-            <div class="contact-div">
-              <a href="https://twitter.com/pulkitkrv"
-                ><i
-                  class="fa-brands fa-square-x-twitter con-icon twitter"
-                  id="twitter"
-                ></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===========================================
-    -----------------Footer Section------------------
-    =========================================== -->
-    <footer>
-      <div class="footer">
-        <p>&copy; Copyright 2024 by Pulkit Kumar Verma</p>
-      </div>
-    </footer>
-
-    <script src="assets/script.js"></script>
-  </body>
 </html>
