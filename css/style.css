@@ -776,6 +776,11 @@ h3.my-profession {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
+.contact .contact-form .form-item textarea#message,
+.contact .contact-form .form-item input {
+    font-family: 'Poppins';
+}
+
 .contact .contact-form .form-item textarea.form-control {
     height: 140px;
 }
