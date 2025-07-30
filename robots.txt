@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://pulkitkrverma.tech/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow specific paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow specific important files
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block specific file types (optional)
+Disallow: *.log
+Disallow: *.tmp

@@ -2,7 +2,7 @@
 var typed = new Typed(".typing", {
   strings: [
     "Web Developer",
-    "App Developer",
+    "Software Engineer",
     "Web Designer",
     "Frontend Developer",
   ],
