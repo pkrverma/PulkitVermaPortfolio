@@ -2,8 +2,7 @@
 var typed = new Typed(".typing", {
   strings: [
     "Web Developer",
-    "Software Engineer",
-    "Web Designer",
+    "Software Developer",
     "Frontend Developer",
   ],
   typeSpeed: 100,
@@ -125,10 +124,10 @@ function resetForm() {
 
 /* ===================================== Block Copy ===================================== */
 
-document.addEventListener("copy", function (event) {
-  const contactForm = document.getElementById("contactForm");
-  if (!contactForm.contains(event.target)) {
-    event.preventDefault();
-    alert("Copying content is not allowed.");
-  }
-});
+// document.addEventListener("copy", function (event) {
+//   const contactForm = document.getElementById("contactForm");
+//   if (!contactForm.contains(event.target)) {
+//     event.preventDefault();
+//     alert("Copying content is not allowed.");
+//   }
+// });

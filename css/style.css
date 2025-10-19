@@ -821,6 +821,10 @@ h3.my-profession {
     border-color: var(--skin-color);
 }
 
+.about #company-name{
+    color: var(--skin-color);
+}
+
 /* Skills Section Styling */
 .about .about-content .skills-section {
     flex: 0 0 100%;
