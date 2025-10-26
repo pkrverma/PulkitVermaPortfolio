@@ -50,7 +50,7 @@ a {
 
 .section {
     background-color: var(--bg-black-900);
-    min-height: 100vh;
+    min-height: 100dvh;
     display: block;
     padding: 0 30px;
     opacity: 1;
@@ -446,7 +446,7 @@ a {
 }
 
 .home {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     color: var(--text-black-900);
     align-items: center;
@@ -2152,6 +2152,11 @@ body.dark .project .project-tech span:hover {
     .about .about-content .skills-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+
+    /* Add gap between education and experience when stacked */
+    .about .about-content .education {
+        margin-bottom: 40px;
     }
 
     .about .about-content .education-experience-flex {
