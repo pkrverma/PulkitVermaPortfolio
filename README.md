@@ -18,7 +18,7 @@ I'm Pulkit Kumar Verma, an aspiring Frontend Developer passionate about building
 **Contact Information:**
 
 - **Email:** [contact.pkrverma@gmail.com](mailto:contact.pkrverma@gmail.com)
-- **Website:** [https://pulkitkrverma.tech](https://pulkitkrverma.tech/)
+- **Website:** [https://pulkitkrverma.me](https://pulkitkrverma.me/)
 - **GitHub:** [https://github.com/pkrverma](https://github.com/pkrverma)
 - **LinkedIn:** [https://www.linkedin.com/in/pulkitkrverma](https://www.linkedin.com/in/pulkitkrverma)
 
