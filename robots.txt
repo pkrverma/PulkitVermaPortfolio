@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://pulkitkrverma.tech/sitemap.xml
+Sitemap: https://pulkitkrverma.me/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
